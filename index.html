@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:300,300i,400,400i,700,700i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>GSAP</title>
+  </head>
+  <body>
+    <!-- Header/Nav -->
+    <section class="container main">
+      <header class="header">
+        <div class="header__logo">
+          <a href="#" class="header__logo-link">
+            <svg
+              class="logo logo--easys"
+              width="130px"
+              viewBox="0 0 543.51 149.26"
+            >
+              <g>
+                <path
+                  class="logo__loop"
+                  fill="none"
+                  stroke="#d2ac8a"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16px"
+                  d="M155.27,141c-35.46-12.62-56.5-47.43-49-89.78h0c4.18-23.67,22.23-42.85,40.33-42.85S176,27.51,171.78,51.18v0C164.39,93.1,129.63,128,90.3,141,49.2,129.17,16.66,94.52,9,51.21v0C4.84,27.51,16.13,8.33,34.23,8.33S70.38,27.49,74.56,51.16v0c7.52,42.62-13.92,77.22-49.8,89.61"
+                ></path>
+
+                <g class="logo__text" fill="#fff">
+                  <path
+                    class="cls-1"
+                    d="M288.43,61.93A39.32,39.32,0,0,1,290.23,73a64.08,64.08,0,0,1-.58,9.1H244.32q.3,8.52,4.19,13.86t11.84,5.34q10.53,0,12.56-9.24h17.18a25.19,25.19,0,0,1-9.68,16.6q-8.22,6.36-20.06,6.35A30.45,30.45,0,0,1,237.11,105q-9.68-10.55-9.67-27,0-16.89,9.67-27.14Q246.33,41,260.35,41,274.93,41,283,51.25A32,32,0,0,1,288.43,61.93Zm-27.94-7.36q-7.22,0-11.26,4.69a21.08,21.08,0,0,0-4.76,12.05h29.88q0-11.4-7.22-15.3A14.13,14.13,0,0,0,260.49,54.57Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M320.19,72a81,81,0,0,1,19.34,2.75V67.85q0-7.36-3-10.9t-9.67-3.54q-6.72,0-10.32,2.67A8.86,8.86,0,0,0,313,63.66H294.35q0-12,8.44-17.32T326.39,41q21.66,0,28,15.15a31.88,31.88,0,0,1,2.16,12.27V113H341.69l-1.29-9.38q-6.79,11.4-20.79,11.4-13.58,0-21.08-6.64a20.88,20.88,0,0,1-6.93-16.1q0-9.74,7.65-15T320.19,72ZM339.53,85.6a60.88,60.88,0,0,0-15.88-2.31q-13.86,0-13.86,9.24A8.66,8.66,0,0,0,313,99.24q3.16,2.82,10.18,2.82a15.37,15.37,0,0,0,11.54-4.69A17.26,17.26,0,0,0,339.53,85.6Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M376.63,91.67q.28,10,14.58,10a15.8,15.8,0,0,0,9-2.39c2.36-1.58,3.54-3.44,3.54-5.55a5.9,5.9,0,0,0-2.17-4.91,21.27,21.27,0,0,0-6.78-3.18l-15.3-5.48q-17-5.93-17-19.35,0-8.94,8-14.36T392,41q13.5,0,20.79,5.91a19.25,19.25,0,0,1,7.58,14.87h-16A7,7,0,0,0,401,56.3q-3-2-8.67-2t-8.73,2.23c-2.07,1.5-3.1,3.2-3.1,5.13q0,5.06,8.51,7.51l16.61,6.2q8.22,2.75,12.63,7a14.72,14.72,0,0,1,4.4,11.05q0,8.66-8.23,15-8.52,6.65-22.52,6.64t-22.52-6.13q-8.52-6.14-8.66-17.25Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M437.09,42.87,454,93.4,468.7,42.87H486l-26.85,82.86Q455,138.3,449,143.78t-15.22,5.48A42.14,42.14,0,0,1,415,144.64v-15a28,28,0,0,0,15.16,4.77,10.19,10.19,0,0,0,8.3-4.05,31.81,31.81,0,0,0,5.27-10.53l2.16-6.79L417.74,42.87Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M497.46,91.67q.29,10,14.58,10a15.83,15.83,0,0,0,9-2.39c2.36-1.58,3.54-3.44,3.54-5.55a5.93,5.93,0,0,0-2.17-4.91,21.38,21.38,0,0,0-6.78-3.18l-15.31-5.48q-17-5.93-17-19.35,0-8.94,8-14.36T512.83,41q13.5,0,20.79,5.91a19.28,19.28,0,0,1,7.58,14.87h-16a7,7,0,0,0-3.32-5.48q-3-2-8.66-2t-8.73,2.23c-2.07,1.5-3.11,3.2-3.11,5.13q0,5.06,8.52,7.51l16.6,6.2q8.24,2.75,12.63,7a14.69,14.69,0,0,1,4.41,11.05q0,8.66-8.23,15-8.52,6.65-22.52,6.64t-22.52-6.13q-8.52-6.14-8.66-17.25Z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Notre offre</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Temoignages</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">FAQ</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">A propos de nous</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__social">
+          <a href="#" class="header__social-link"
+            ><i class="fa fa-facebook header__social-icon"></i
+          ></a>
+          <a href="#" class="header__social-button">Contactez-nous</a>
+        </div>
+      </header>
+
+      <!-- Hero Content -->
+      <div class="main__content">
+        <div class="main__content-header">
+          <h1 class="main__content-header-text">Notre offre</h1>
+        </div>
+        <div class="main__content-subheader">
+          <h2 class="main__content-subheader-text">
+            Nous savons que chercher et trouver un partenaire est souvent
+            compliqué. C’est normal et vous êtes nombreux à l’avoir vécu !
+            Retrouvez la confiance, laissez-nous vous guider.
+          </h2>
+        </div>
+      </div>
+
+      <!-- Bg Hero Image -->
+      <div class="main__bg-wrapper"><div class="main__bg"></div></div>
+    </section>
+    <section class="second">
+      <div class="second__cta">
+        <div class="second__cta-content">
+          <div class="second__cta-btn-wrapper">
+            <a href="#" class="second__cta-btn">&rarr;</a>
+          </div>
+          <p class="second__cta-text">Decouvrez nos points forts</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Header/Nav [END]-->
+    <script src="./scripts/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
